@@ -29,4 +29,18 @@ def bot_create(request):
                         """)
 
 def backtest(request):
-    return HttpResponse("Backteste deinen Bot.")
+    return HttpResponse("""
+    <section>
+    Backteste deinen Bot.
+    <div><button>GO</button></div>
+    <div>
+        Bot settings that should be test, to get best results.
+    </div>
+    <div>
+    <label>Zeitfenster</label><input></input>
+    <label>Symbole</label><input>Hier eine erwiterbare liste (mehre inputs)</input>
+    <label>Base Currency</label><input>Hier nen Dropdwon menue mit hacken</input>
+    </div>
+    
+    </section>
+    """)
